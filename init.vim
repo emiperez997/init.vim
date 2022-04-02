@@ -14,7 +14,10 @@ set noshowmode
 set cursorline
 
 
-call plug#begin('~\.vim\plugged')
+" Windows: call plug#begin('~\.vim\plugged')
+"Linux
+call plug#begin('~/.vim/plugged')
+
 
 " Themes
 Plug 'morhetz/gruvbox'
