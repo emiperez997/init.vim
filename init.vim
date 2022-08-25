@@ -21,6 +21,7 @@ call plug#begin('~/.vim/plugged')
 
 " Themes
 Plug 'morhetz/gruvbox'
+Plug 'navarasu/onedark.nvim'
 
 " Icons
 Plug 'ryanoasis/vim-devicons'
@@ -37,9 +38,15 @@ Plug 'digitaltoad/vim-pug'
 
 call plug#end() 
 
-colorscheme gruvbox
-let g:gruvbox_contrast_dark = "hard"
-let NERDTreeQuitOnOpen=1
+" colorscheme gruvbox
+" let g:gruvbox_contrast_dark = "hard"
+
+let g:onedark_config = {
+  \ 'style': 'cool',
+  \}
+colorscheme onedark
+
+
 let NERDTreeShowHidden=1
 
 let mapleader = " "
@@ -47,4 +54,7 @@ nmap <Leader>s <Plug>(easymotion-s2)
 nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
 nmap <Leader>nt :NERDTreeFind<CR>
+
+" Confirmar sugerencias con Coc
+inoremap <silent><expr> <CR> coc#pum#confirm()
 
