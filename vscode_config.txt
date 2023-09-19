@@ -125,3 +125,184 @@ Keyboards Settings
   // }
   // Holi
 ]
+
+NEW CONFIG
+{
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[handlebars]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8",
+    "editor.detectIndentation": false,
+    // "editor.formatOnSave": false
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "breadcrumbs.enabled": false,
+  "editor.cursorBlinking": "expand",
+  "editor.formatOnSave": true,
+  "editor.glyphMargin": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.lineNumbers": "relative",
+  "editor.minimap.enabled": false,
+  "editor.overviewRulerBorder": false,
+  "editor.scrollbar.vertical": "auto",
+  "editor.tabSize": 2,
+  "emmet.includeLanguages": {
+    "django-html": "html"
+  },
+  "explorer.compactFolders": false,
+  "fiveServer.php.executable": "C:/xampp/php/php.exe",
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.openRepositoryInParentFolders": "always",
+  "github.copilot.enable": {
+    "*": true,
+    "markdown": true,
+    "plaintext": true,
+    "scminput": false,
+    "yaml": true
+  },
+  "java.compile.nullAnalysis.mode": "automatic",
+  "java.project.sourcePaths": [""],
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "json.sortOnSave.enable": true,
+  "php.validate.executablePath": "C:\\xampp\\php\\php.exe",
+  "security.workspace.trust.untrustedFiles": "open",
+  "symbols.hidesExplorerArrows": false,
+  "terminal.integrated.fontFamily": "SpaceMono Nerd Font Mono",
+  "terminal.integrated.fontSize": 12,
+  "vim.autoindent": true,
+  "vim.handleKeys": {
+    "<C-d>": false,
+    "<C-n>": false,
+    "<C-s>": false,
+    "<C-z>": false
+  },
+  "vim.insertModeKeyBindings": [
+    {
+      "after": ["<Esc>"],
+      "before": ["k", "j"]
+    }
+  ],
+  // Vim Settings
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "w"],
+      "commands": [":w"]
+    },
+    {
+      "before": ["<leader>", "q"],
+      "commands": [":q"]
+    }
+  ],
+  "vim.statusBarColorControl": true,
+  "vim.statusBarColors.insert": "#4C0027",
+  "vim.statusBarColors.normal": "#0C1025",
+  "vim.statusBarColors.visual": "#1E5128",
+  "vim.useSystemClipboard": true,
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["p"],
+      "commands": ["editor.action.clipboardPasteAction"]
+    }
+  ],
+  "window.commandCenter": false,
+  "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${profileName}${separator}${appName}",
+  "window.titleBarStyle": "custom",
+  "window.zoomLevel": -1,
+  "workbench.activityBar.visible": false,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#005f5f",
+    "statusBar.debuggingBackground": "#005f5f",
+    "statusBar.noFolderBackground": "#005f5f"
+  },
+  "workbench.colorTheme": "Palenight Theme",
+  // New Settings
+  "workbench.editor.showTabs": false,
+  "workbench.iconTheme": "icons",
+  "workbench.layoutControl.enabled": false
+}
+
+[
+  {
+    "key": "alt+f",
+    "command": "extension.advancedNewFile"
+  },
+  {
+    "key": "ctrl+alt+n",
+    "command": "-extension.advancedNewFile"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+  },
+  {
+    "key": "ctrl+oem_3",
+    "command": "-workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "nerdtree.unfocusSidebarOrClose",
+    "when": "filesExplorerFocus && sideBarVisible"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "-nerdtree.unfocusSidebarOrClose",
+    "when": "filesExplorerFocus && sideBarVisible"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "actions.find",
+    "when": "editorFocus || editorIsOpen"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "-actions.find",
+    "when": "editorFocus || editorIsOpen"
+  },
+  {
+    "key": "shift+alt+oem_comma",
+    "command": "editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+a",
+    "command": "-editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+a",
+    "command": "workbench.view.extension.dockerView"
+  }
+]
+
